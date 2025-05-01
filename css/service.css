@@ -1,0 +1,29 @@
+.service-container {
+  /* width: 45%; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.service-section-container {
+  margin-top: 100px !important;
+}
+
+.service-icon {
+  font-size: 25px;
+  color: #4965e1;
+}
+
+.service-info {
+  margin-left: 20px;
+}
+
+.service-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: black !important;
+  /* color: #5271ff; */
+}
+
+/* dark mode */
+.dark .service-name {
+  color: white !important;
+}

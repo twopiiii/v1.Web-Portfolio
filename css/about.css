@@ -1,0 +1,128 @@
+.my-info {
+  animation: opacity 0.6s ease-in-out;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+#hero {
+  text-align: center;
+}
+
+.my-img {
+  margin-bottom: 20px;
+}
+
+.my-img img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+/* .roles-p {
+  margin-bottom: 0 !important;
+} */
+
+h5 #roles {
+  /* text-transform: uppercase; */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.my-name {
+  font-weight: 700;
+}
+
+.about-me {
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+
+.profile-links {
+  margin-top: 20px;
+}
+
+.profile-links i {
+  font-size: 27px;
+  /* border: 1px solid #5271ff;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 10px; */
+  /* color: #5271ff; */
+  color: rgb(58, 58, 58);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+/* .profile-links i:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+.linkedin {
+  color: rgb(2, 2, 168);
+}
+
+.github {
+  color: black !important;
+} */
+
+.hero-btns {
+  margin-top: 60px;
+}
+
+.hero-btns button i {
+  margin-left: 7px;
+}
+
+.hero-btns .cv a,
+.hero-btns .hire-me a {
+  color: white;
+}
+
+.scroll-down {
+  margin-top: 100px !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.scroll-down a {
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  animation: bounce 0.4s infinite alternate;
+  cursor: pointer;
+}
+
+.scroll-down a i {
+  color: #5271ff;
+}
+
+/* Dark Mode */
+.dark .profile-links i {
+  color: white;
+}
+
+@media (max-width: 395px) {
+  .hero-btns .cv {
+    margin-bottom: 10px;
+  }
+}

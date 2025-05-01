@@ -1,0 +1,94 @@
+.experience-container {
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  padding: 20px 0 30px 0;
+}
+
+.experience {
+  margin-bottom: 35px;
+}
+
+.experience:last-child {
+  margin-bottom: 0 !important;
+}
+
+.date-span {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.job-type {
+  display: inline-block;
+  font-size: 12px !important;
+  border-radius: 10px;
+  padding: 1px 10px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.freelance {
+  background-color: #ffffc5;
+  color: #abae00 !important;
+}
+
+.internship {
+  background-color: #fee1aa;
+  color: #b79000 !important;
+}
+
+.part-time {
+  background-color: #dae2ff;
+  color: #000784 !important;
+}
+
+.full-time {
+  background-color: #d4ffd3;
+  color: #008412 !important;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4965e1;
+  margin-bottom: 3px;
+}
+
+.positions {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.positions li {
+  font-size: 16px;
+  font-weight: 700;
+  list-style-type: none;
+  display: inline-block;
+  color: #838383;
+}
+
+/* dark mode */
+.dark .company-name {
+  color: #5271ff !important;
+}
+
+.dark .freelance {
+  color: #abae00 !important;
+}
+
+.dark .internship {
+  color: #b79000 !important;
+}
+
+.dark .part-time {
+  color: #000784 !important;
+}
+
+.dark .full-time {
+  color: #008412 !important;
+}
+
+.dark .separator {
+  color: #838383 !important;
+}

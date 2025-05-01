@@ -1,0 +1,164 @@
+.project {
+  width: 100%;
+  padding: 20px 30px 35px 30px;
+  margin: 0 auto 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:last-child {
+  margin-bottom: 0 !important;
+}
+
+.project-type {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.project-img {
+  display: none;
+  width: 100% !important;
+}
+
+.project-img.active {
+  display: block;
+}
+
+.img-btns {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  /* transform: translateY(50%); */
+  padding: 0 25px !important;
+}
+
+.img-btns button {
+  background-color: #4965e1;
+  /* border-radius: 50%; */
+  display: inline-block !important;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+  width: auto !important;
+  font-size: 20px;
+}
+
+.img-btns button:hover {
+  opacity: 1;
+}
+
+.project-role {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.project-role li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  border-radius: 25px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.frontend-dev {
+  border: 1px solid #c1b100;
+  color: #c1b100;
+}
+
+.fullstack-dev {
+  border: 1px solid #00c100;
+  color: #00c100;
+}
+
+.quality-assurance {
+  border: 1px solid #c10074;
+  color: #c10074;
+}
+
+.languages-used {
+  margin: 20px 0 35px 0;
+}
+
+.lang {
+  width: 30px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.figma {
+  height: 30px;
+  width: 25px;
+}
+
+.bootstrap {
+  height: 30px !important;
+  width: 40px;
+}
+
+.php {
+  width: 45px !important;
+}
+
+.project-btn-link {
+  /* color: rgb(67, 67, 67); */
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #4965e1 !important;
+  /* border: 1px solid #5271ff; */
+  transition: all 0.2s ease-in-out;
+}
+
+.project-btn-link:hover {
+  letter-spacing: 1px;
+}
+
+.project-btn-link i {
+  margin-right: 7px;
+}
+
+.view-all-btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* dark theme */
+.dark .project-btn-link {
+  color: white;
+}
+
+.dark .project-name {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 12px 15px 30px 15px;
+  }
+}
+
+@media (max-width: 526px) {
+  .project-btn-link {
+    margin-bottom: 10px;
+  }
+}
