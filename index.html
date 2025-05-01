@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jomar Kristoffer L. Besayte</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Other styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav id="nav">
+      <div class="nav-container">
+        <div class="nav-header">
+          <img src="img/logo/logo.png" alt="Logo" class="logo" />
+
+          <ul class="links">
+            <span class="close"><i class="fas fa-times"></i></span>
+
+            <li>
+              <a href="#hero">About</a>
+              <span class="line"></span>
+            </li>
+
+            <li>
+              <a href="#skills">Skills</a>
+              <span class="line"></span>
+            </li>
+
+            <li>
+              <a href="#services">Services</a>
+              <span class="line"></span>
+            </li>
+
+            <li>
+              <a href="#projects">Projects</a>
+              <span class="line"></span>
+            </li>
+
+            <li>
+              <a href="#experience">Experience</a>
+              <span class="line"></span>
+            </li>
+          </ul>
+
+          <div class="overlay"></div>
+
+          <div class="nav-btn-container">
+            <div class="color-theme">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+
+            <!-- Hmaburger button -->
+            <button class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="body-content">
+      <!-- Hero / About -->
+      <section id="hero">
+        <div class="my-info">
+          <div class="my-img">
+            <img src="img/my-img.jpg" alt="" />
+          </div>
+
+          <h5 class="highlight"><span id="roles"></span></h5>
+          <h1 class="my-name">
+            Hi, I'm
+            <span class="highlight-gradient">Jomar Kristoffer L. Besayte</span>!
+          </h1>
+          <!-- <p class="about-me">
+            Experienced Web Developer with a freelance background as a Fullstack
+            Web Developer, bringing skills in Web Development, Database
+            Management, and Quality Assurance Testing. Driven by a strong belief
+            in digital inclusivity and accessibility, I am dedicated to building
+            web experiences that are inclusive and accessible to everyone.
+          </p> -->
+
+          <p class="about-me">
+            Driven by a strong belief in digital inclusivity and accessibility,
+            I am dedicated to building web experiences that are inclusive and
+            accessible to everyone. I am always open for new opportunities and
+            collaboration. Feel free to hit me up!
+          </p>
+
+          <div class="profile-links" id="hero-profile-links"></div>
+
+          <div class="hero-btns">
+            <button class="cv main-btn">
+              <a
+                href="files/CV - Besayte Jomar Kristoffer.pdf"
+                download="CV - Bessayte Jomar Krisstoffer.pdf"
+                >Download CV <i class="fas fa-download"></i
+              ></a>
+            </button>
+
+            <button class="hire-me main-btn">
+              <a href="mailto:code.besaytejomarkristoffer@gmail.com"
+                >Hire me! <i class="fas fa-envelope"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+
+        <div class="scroll-down">
+          <a href="#skills"
+            >Scroll <i class="fas fa-chevron-circle-down"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills-container" id="skills">
+        <div class="sec-intro hidden">
+          <h2 class="title hidden">Skills</h2>
+          <p class="title-desc">
+            <span class="span-highlight">Programming Languages</span> and
+            <span class="span-highlight">Tools</span> I use for Web Development
+            and Quality Assurance Testing.
+          </p>
+        </div>
+
+        <div class="container-mod container" id="stack-container"></div>
+      </section>
+
+      <!-- Services -->
+      <section
+        class="section-container service-section-container"
+        id="services"
+      >
+        <div class="sec-intro hidden">
+          <h2 class="title">Services</h2>
+        </div>
+
+        <div class="container-mod container">
+          <div class="row justify-content-between row-gap-4">
+            <div
+              class="service-container box-shadow-mod hidden col-12 col-md-12 col-lg-5 d-flex"
+            >
+              <div class="service-icon me-3">
+                <i class="fas fa-code"></i>
+              </div>
+
+              <div class="service-info">
+                <p class="service-name">Web Development and Services</p>
+                <p>
+                  I possess the skills to
+                  <span class="span-highlight">develop</span> and
+                  <span class="span-highlight">troubleshoot</span>
+                  full-stack websites. My expertise includes creating
+                  <span class="span-highlight">static</span> and
+                  <span class="span-highlight">dynamic</span> web pages,
+                  contributing to
+                  <span class="span-highlight"> front-end</span>,
+                  <span class="span-highlight">back-end</span>, or
+                  <span class="span-highlight">full-stack</span>
+                  development requirements. I am committed to creating and
+                  contributing to the creation of responsive, scalable,
+                  user-friendly, efficient, and inclusive websites.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="service-container box-shadow-mod hidden col-12 col-md-12 col-lg-5 d-flex"
+            >
+              <div class="service-icon me-3">
+                <i class="fas fa-bug"></i>
+              </div>
+
+              <div class="service-info">
+                <p class="service-name">Quality Assurance Testing</p>
+                <p>
+                  My expertise as a Quality Assurance Tester encompasses the
+                  full testing lifecycle, including the
+                  <span class="span-highlight">creation</span> and
+                  <span class="span-highlight">execution</span> of detailed
+                  <span class="span-highlight">test cases</span>
+                  and <span class="span-highlight">test scenarios</span>,
+                  thorough and accurate
+                  <span class="span-highlight">bug tracking</span> and
+                  <span class="span-highlight">reporting</span>, and the
+                  development of effective
+                  <span class="span-highlight">test plans</span> and concise
+                  <span class="span-highlight">test summaries</span> for both
+                  <span class="span-highlight">manual</span> and
+                  <span class="span-highlight">automated</span>
+                  testing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section-container" id="projects">
+        <div class="sec-intro hidden">
+          <h2 class="title">Projects</h2>
+          <p class="title-desc">
+            My project portfolio, showcasing both
+            <span class="span-highlight">client work</span> and
+            <span class="span-highlight">skill-building</span>
+            initiatives. Shown here are my recent projects.
+          </p>
+        </div>
+
+        <div
+          class="container-mod projects-container"
+          id="projects-container"
+        ></div>
+      </section>
+
+      <!-- Experiences -->
+      <section class="section-container" id="experience">
+        <div class="sec-intro hidden">
+          <h2 class="title">Experience</h2>
+          <p class="title-desc">
+            Experiences that I gained that helped me to gain more knowledge,
+            learn new skills and techniques, and enhance my skills in Web
+            Development and Testing.
+          </p>
+        </div>
+
+        <div
+          class="experience-container container-mod hidden"
+          id="experience-container"
+        >
+          <!-- <div class="experience hidden container">
+            <div class="row">
+              <div class="col-xl-2">
+                <p class="date-span">Aug 2023 - Dec 2023</p>
+              </div>
+
+              <div class="col">
+                <p class="job-type">Freelance</p>
+                <p class="company-name">Civil-Tech Connect</p>
+                <p class="positions">
+                  Fullstack Developer | Quality Assurance Tester
+                </p>
+                <p class="role-desc">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+                  ipsam aliquam inventore quae reiciendis vel suscipit delectus
+                  rerum ea, minus facilis voluptatum perferendis! Nesciunt earum
+                  explicabo, eveniet tenetur quis necessitatibus.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Contacts -->
+    <section class="section-container contact-container" id="contact">
+      <div class="container hidden contact-info-container">
+        <div class="row justify-content-between row-gap-4">
+          <div class="col-12 col-lg-6 col-xl-5">
+            <h1 class="contact-title">Let's Make Your Visions Into Reality.</h1>
+
+            <div class="profile-links" id="contact-profile-links"></div>
+          </div>
+
+          <div class="col-12 col-lg-5 col-xl-5 contact-infos">
+            <ul>
+              <li class="email">
+                <i class="fas fa-envelope"></i
+                >code.besaytejomarkristoffer@gmail.com
+              </li>
+              <li class="phone-no">
+                <i class="fas fa-phone-alt"></i>0995-155-4235
+              </li>
+              <li class="messenger">
+                <i class="fab fa-facebook-messenger"></i>Jomar Kristoffer
+                Besayte
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Other JS -->
+    <script src="js/projects.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/components.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/autoType.js"></script>
+  </body>
+</html>
