@@ -285,7 +285,7 @@ let viewButton = "";
 if (projects.length > 3) {
   viewButton = `
       <div class="view-all-btn-container hidden">
-        <a href="projectLibrary.html" target="_blank" class="view-all-projects main-btn">
+        <a href="projectLibrary.html" class="view-all-projects main-btn">
           View Project Library
         </a>
       </div>`;
