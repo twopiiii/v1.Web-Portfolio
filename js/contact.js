@@ -32,5 +32,12 @@ const linkHTML = links
   })
   .join("");
 
-hero.innerHTML = linkHTML;
-contact.innerHTML = linkHTML;
+if (
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("index.html")
+) {
+  hero.innerHTML = linkHTML;
+  contact.innerHTML = linkHTML;
+} else {
+  contact.innerHTML = linkHTML;
+}

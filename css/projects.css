@@ -1,6 +1,6 @@
 .project {
   width: 100%;
-  padding: 20px 30px 35px 30px;
+  padding: 20px 30px;
   margin: 0 auto 30px auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: all 0.3s ease-in-out;
@@ -92,8 +92,13 @@
   color: #c10074;
 }
 
+.designer {
+  border: 1px solid hsl(305, 100%, 38%);
+  color: #c100c1;
+}
+
 .languages-used {
-  margin: 20px 0 35px 0;
+  margin: 20px 0;
 }
 
 .lang {
@@ -139,7 +144,40 @@
 
 .view-all-btn-container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
+}
+
+.view-all-projects {
+  cursor: pointer;
+  color: white;
+  padding: 15px 20px !important;
+  border-radius: 5px;
+}
+
+/* Project Archive */
+.project-library-content {
+  margin-bottom: 100px !important;
+}
+.breadcrumb .home-li a {
+  color: black !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb .home-li a:hover {
+  color: #5271ff;
+  letter-spacing: 1px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: black !important;
+}
+
+.breadcrumb .library-li {
+  color: #5f5f5f !important;
+}
+
+.project-library-container {
+  margin-top: 70px !important;
 }
 
 /* dark theme */
@@ -151,9 +189,17 @@
   color: white !important;
 }
 
+.dark .breadcrumb .home-li a {
+  color: white !important;
+}
+
+.dark .breadcrumb-item + .breadcrumb-item::before {
+  color: white !important;
+}
+
 @media (max-width: 768px) {
   .project {
-    padding: 12px 15px 30px 15px;
+    padding: 12px 15px;
   }
 }
 

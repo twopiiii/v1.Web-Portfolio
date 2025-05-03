@@ -1,6 +1,25 @@
 const projects = [
   {
     img: [
+      "img/projects/goodFood/design.png",
+      "img/projects/goodFood/assets.png",
+      "img/projects/goodFood/wireframe.png",
+    ],
+    type: "Side Project",
+    name: "Good Food - Food E-commerce Website",
+    role: ["UI/UX Designer"],
+    stack: ["Figma"],
+    description:
+      "Good Food is a Food E-commerce Website created as a personal project of mine to enhance my skills in UI/UX Design. The design is focused on lively colors to pop-out the food's deliciousness, user-friendly design for easy navigation, and that modern look to match today's era. This is an ongoing project and I plan to develop this using React, Laravel, and MySQL.",
+    links: [
+      {
+        media: "Figma",
+        link: "    https://www.figma.com/design/WhvtLf2YUryBgluw9n83cI/Good-Food-Template?node-id=0-1&t=rtMpAF08GcmccZfj-1",
+      },
+    ],
+  },
+  {
+    img: [
       "img/projects/ctc/login 2.png",
       "img/projects/ctc/lm.png",
       "img/projects/ctc/tc.png",
@@ -88,9 +107,20 @@ const projects = [
 
 const projectContainer = document.getElementById("projects-container");
 let projectHTML = "";
+let projectsToDisplay = []; // store project for diplay
+
+// if in index, display 3 projects only, else, display all
+if (
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("index.html")
+) {
+  projectsToDisplay = projects.slice(0, 3);
+} else if (window.location.pathname.endsWith("projectLibrary.html")) {
+  projectsToDisplay = projects;
+}
 
 // slice(0,3) = displays project from index 0 to before index 3 only
-projects.slice(0, 3).forEach((project, index) => {
+projectsToDisplay.forEach((project, index) => {
   const images = project.img
     .map((path, imgIndex) => {
       return `<img src="${path}" alt="${project.name} - img ${
@@ -111,6 +141,8 @@ projects.slice(0, 3).forEach((project, index) => {
         liClass = "frontend-dev";
       } else if (role === "Quality Assurance Tester") {
         liClass = "quality-assurance";
+      } else if (role === "UI/UX Designer") {
+        liClass = "designer";
       }
 
       return `<li class="${liClass}">${role}</li>`;
@@ -215,7 +247,7 @@ projects.slice(0, 3).forEach((project, index) => {
   }
 
   const showProject = `
-    <div class="hidden container project box-shadow-mod">
+    <div class="hidden container project box-shadow-mod" id="project">
         <div class="img-container" id="img-container-${index}">
             ${images}
 
@@ -250,14 +282,25 @@ let viewButton = "";
 if (projects.length > 3) {
   viewButton = `
       <div class="view-all-btn-container hidden">
-        <button class="view-all-projects main-btn">
-          View Project Archive
-        </button>
+        <a href="projectLibrary.html" target="_blank" class="view-all-projects main-btn">
+          View Project Library
+        </a>
       </div>`;
 }
 
-projectContainer.innerHTML += projectHTML + viewButton;
+// projectContainer.innerHTML += projectHTML + viewButton;
 
+// if in index, display project library button, else, display none
+if (
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("index.html")
+) {
+  projectContainer.innerHTML += projectHTML + viewButton;
+} else if (window.location.pathname.endsWith("projectLibrary.html")) {
+  projectContainer.innerHTML = projectHTML;
+}
+
+// prev and next btn for project img
 projectContainer.addEventListener("click", function (e) {
   // e.preventDefault();
 

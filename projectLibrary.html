@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jomar Kristoffer L. Besayte</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Other styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav id="nav">
+      <div class="nav-container">
+        <div class="nav-header">
+          <img src="img/logo/logo.png" alt="Logo" class="logo" />
+
+          <div class="nav-btn-container">
+            <div class="color-theme">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="body-content project-library-content">
+      <!-- Breadcrumb -->
+      <section style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home-li breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="library-li breadcrumb-item active" aria-current="page">
+            Project Library
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section
+        class="section-container project-library-container"
+        id="projects"
+      >
+        <div class="sec-intro hidden">
+          <h2 class="title">Projects</h2>
+          <p class="title-desc">
+            My project portfolio, showcasing both
+            <span class="span-highlight">client work</span> and
+            <span class="span-highlight">skill-building</span>
+            initiatives.
+          </p>
+        </div>
+
+        <div
+          class="container-mod projects-container"
+          id="projects-container"
+        ></div>
+      </section>
+    </div>
+
+    <!-- Contacts -->
+    <section class="section-container contact-container" id="contact">
+      <div class="container hidden contact-info-container">
+        <div class="row justify-content-between row-gap-4">
+          <div class="col-12 col-lg-6 col-xl-5">
+            <h1 class="contact-title">Let's Make Your Visions Into Reality.</h1>
+
+            <div class="profile-links" id="contact-profile-links"></div>
+          </div>
+
+          <div class="col-12 col-lg-5 col-xl-5 contact-infos">
+            <ul>
+              <li class="email">
+                <i class="fas fa-envelope"></i
+                >code.besaytejomarkristoffer@gmail.com
+              </li>
+              <li class="phone-no">
+                <i class="fas fa-phone-alt"></i>0995-155-4235
+              </li>
+              <li class="messenger">
+                <i class="fab fa-facebook-messenger"></i>Jomar Kristoffer
+                Besayte
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
