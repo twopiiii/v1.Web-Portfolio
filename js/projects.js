@@ -115,7 +115,10 @@ if (
   window.location.pathname.endsWith("index.html")
 ) {
   projectsToDisplay = projects.slice(0, 3);
-} else if (window.location.pathname.endsWith("projectLibrary.html")) {
+} else if (
+  window.location.pathname.endsWith("projectLibrary.html") ||
+  window.location.pathname.endsWith("projectLibrary")
+) {
   projectsToDisplay = projects;
 }
 
@@ -296,7 +299,10 @@ if (
   window.location.pathname.endsWith("index.html")
 ) {
   projectContainer.innerHTML += projectHTML + viewButton;
-} else if (window.location.pathname.endsWith("projectLibrary.html")) {
+} else if (
+  window.location.pathname.endsWith("projectLibrary.html") ||
+  window.location.pathname.endsWith("projectLibrary")
+) {
   projectContainer.innerHTML = projectHTML;
 }
 
