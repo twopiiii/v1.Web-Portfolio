@@ -29,7 +29,7 @@ const projects = [
     ],
     type: "Freelance Project",
     name: "Civil-Tech Connect",
-    role: ["Full-stack Developer", "Quality Assurance Tester"],
+    role: ["Full Stack Developer"],
     stack: ["Figma", "PostmanAPI", "Bootstrap", "React", "Laravel", "MySQL"],
     description:
       "CivilTech-Connect is specifically built for current and future Civil Technologist, offering tailored educational resources, networking opportunities, available TESDA courses, companies open for interns, and job support to enhance their professional development and success. It also have an admin page that allows to manage data and website content.",
@@ -59,7 +59,7 @@ const projects = [
     ],
     type: "Internship Project",
     name: "DBP - Provident Fund Department Website, and Data Management System",
-    role: ["Full-stack Developer", "Quality Assurance Tester"],
+    role: ["Full Stack Developer"],
     stack: ["Figma", "Bootstrap", "SCSS", "JavaScript", "PHP", "MySQL"],
     description:
       "DBP - Provident Fund website is developed for DBP - Provident Fund Members. It allows them to login and view their loan balances, surpluses, contributions, and generate their own Statement of Account (SOA). They can also calculate loans using the Loan Calculator feature. It also have an admin page that allows to manage and store data, includes CMS, operates CRUD, generates Statement of Account (SOA), and generates Surplus Statement.",
@@ -92,7 +92,7 @@ const projects = [
     ],
     type: "Capstone Project",
     name: "PAWsitive: A Web-Based Pet Care Veterinary Clinic Management System",
-    role: ["Front-End Developer", "Quality Assurance Tester"],
+    role: ["Front End Developer", "Quality Assurance Analyst"],
     stack: ["Figma", "Bootstrap", "SCSS", "JavaScript"],
     description:
       "PAWsitive is a web-based pet care veterinary system that allow users to order pet shop items, log in to view their pet's health records (including history), book appointments, and receive an SMS notification for appointment status and reminder. An admin page is also developed which allows for data, website content, and inventory management with staff authentication to control feature access. I designed and developed the front-end, ensuring responsiveness, scalability, and user-friendliness.",
@@ -138,11 +138,13 @@ projectsToDisplay.forEach((project, index) => {
     .map((role, roleIndex) => {
       let liClass = "";
 
-      if (role === "Full-stack Developer") {
+      if (role === "Full Stack Developer") {
         liClass = "fullstack-dev";
-      } else if (role === "Front-End Developer") {
+      } else if (role === "Front End Developer") {
         liClass = "frontend-dev";
       } else if (role === "Quality Assurance Tester") {
+        liClass = "quality-assurance";
+      } else if (role === "Quality Assurance Analyst") {
         liClass = "quality-assurance";
       } else if (role === "UI/UX Designer") {
         liClass = "designer";
